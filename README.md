@@ -21,10 +21,24 @@ P(c|x)=P(x1|c)  P(x2|c) ….. P(xn|c) P(c)
 •	P(x) is the prior probability of predictor.
 
 
-
-
-
-Naïve Bayes Conditional Independence Assumption
+###Naïve Bayes Conditional Independence Assumption
 
 Assume that the probability of observing the conjunction of attributes is equal to the product of the individual probability P(Xi|Cj).
+                                        
+                                      tweet
+                                   /  |  \  \          w=word
+                                  /   |   \  \         c=class
+                                 w1   w2   w3 w4
+
+	Features detect term presence and are independent of each other given the class P(W1,…….W4|C) =P(W1|C)*P(W2|C)*…….P(X4|C)
+
+This model is appropriate for binary variables. Zero probabilities cannot conditioned away, no matter the other evidence
+Here Tweet representing the sentence and w1, w2, w3, w4 are representing words. Probability of the tweet is equal to the product of the probabilities of the words. Probability of each word in the each sentence is found using the posterior probability.
+Thus each sentence probability will be found accordingly with the multiplication of each word probability.
+
+
+
+
+
+
 
