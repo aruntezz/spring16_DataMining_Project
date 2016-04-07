@@ -11,9 +11,9 @@ Data is obtained from tweets and imdb. The data in tweets is raw and contains un
 #NAÏVE BAYES TECHNIQUE
 Bayes theorem provides a way of calculating the posterior probability, P(c|x), from P(c), P(x), and P(x|c). Naive Bayes classifier assume that the effect of the value of a predictor (x) on a given class (c) is independent of the values of other predictors. This assumption is called as class conditional independence.
 
- Naïve Bayes rule
+	##Naïve Bayes rule
 
-P(c|x)=P(x1|c)  P(x2|c) ….. P(xn|c) P(c)
+	P(c|x)=P(x1|c)  P(x2|c) ….. P(xn|c) P(c)
 
 •	P(c|x) is the posterior probability of class (target) given predictor(attribute).
 •	P(c) is the prior probability of class.
@@ -30,7 +30,7 @@ Assume that the probability of observing the conjunction of attributes is equal 
                                   /   |   \  \         c=class
                                  w1   w2   w3 w4
 
-	Features detect term presence and are independent of each other given the class P(W1,…….W4|C) =P(W1|C)*P(W2|C)*…….P(X4|C)
+	Features detect term presence and are independent of each other given the class P(W1,…….W4|C) =P(W1|C)*P(W2|C)*…….P(W4|C)
 
 This model is appropriate for binary variables. Zero probabilities cannot conditioned away, no matter the other evidence
 Here Tweet representing the sentence and w1, w2, w3, w4 are representing words. Probability of the tweet is equal to the product of the probabilities of the words. Probability of each word in the each sentence is found using the posterior probability.
